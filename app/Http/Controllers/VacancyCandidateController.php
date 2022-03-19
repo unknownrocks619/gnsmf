@@ -112,7 +112,7 @@ class VacancyCandidateController extends Controller
         $request->validate([
             "post" => "required",
             "voucher_number" => "required|unique:vacancy_candidate_uploads,remarks",
-            "application_form_file" => "required|mimes:png,jpg|file|max:1024",
+            "application_form_file" => "required|mimes:pdf,png,jpg|file|max:1024",
             "voucher_file" => "required|mimes:pdf,jpg,png|file|max: 1024",
             "education_file" => "required|mimes:pdf,png,jpg|file|max:2048",
             "experience_letter" => "required|mimes:pdf|file|max:2048",
