@@ -83,7 +83,7 @@ class VacancyCandidateController extends Controller
 
         if ($email_exists) {
             // return redirect to upload.
-            return redirect()->route('vacancy_upload',decrypt($email_exists->id));
+            return redirect()->route('vacancy_upload',encrypt($email_exists->id));
         }
 
         $candidate->first_name = filter_var($request->first_name, FILTER_DEFAULT);
