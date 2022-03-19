@@ -15,9 +15,9 @@
             <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' href='{{ route('index',['download'=>true]) }}'>
               Vacancy: Download Application Form
             </a>
-            <a class='btn btn-outline btn-lg js-to-slide animated onstart' data-animation-delay='400' data-animation='fadeInUp' data-slide='2' href='#'>
-              Upload Application
-              <i class='fa fa-angle-down'></i>
+            <a class='btn btn-outline btn-lg js-to-slide animated onstart' data-animation-delay='400' data-animation='fadeInUp' data-slide='2' href="{{ route('upload_application') }}">
+                Vacancy: Upload Application
+                <!-- <i class='fa fa-angle-down'></i> -->
             </a>
           </div>
         </div>
