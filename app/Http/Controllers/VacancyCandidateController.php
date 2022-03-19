@@ -113,11 +113,11 @@ class VacancyCandidateController extends Controller
             "post" => "required",
             "voucher_number" => "required|unique:vacancy_candidate_uploads,remarks",
             "application_form_file" => "required|mimes:png,jpg|file|max:1024",
-            "voucher_file" => "required|mimes:jpg,png|file|max: 1024",
-            "education_file" => "required|mimes:pdf|file|max:2048",
+            "voucher_file" => "required|mimes:pdf,jpg,png|file|max: 1024",
+            "education_file" => "required|mimes:pdf,png,jpg|file|max:2048",
             "experience_letter" => "required|mimes:pdf|file|max:2048",
-            "citizenship_front_file" => "required|mimes:png,jpg|file|max:1024",
-            "citizenship_back_file" => "required|mimes:png,jpg|file|max:1024"
+            "citizenship_front_file" => "required|mimes:pdf,png,jpg|file|max:1024",
+            "citizenship_back_file" => "required|mimes:pdf,png,jpg|file|max:1024"
         ]);
 
         if ( ! array_key_exists($request->post,$array_keys) ) {

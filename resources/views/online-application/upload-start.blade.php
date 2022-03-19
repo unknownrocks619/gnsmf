@@ -117,7 +117,7 @@ body {
                                         <sup class="text-danger">*</sup>
                                     </span>
                                     <input type="file" name="application_form_file" class="form-control" />
-                                    <small class="text-danger">Accepted Format: jpg or png, Max Size: 1 MB</small>
+                                    <small class="text-danger">Accepted Format: pdf, jpg or png, Max Size: 1 MB</small>
                                     @error("application_form_file")
                                         <div class="alert alert-danger">{{$message}}</div>
                                     @enderror
@@ -142,7 +142,7 @@ body {
                                         <sup class="text-danger">*</sup>
                                     </span> 
                                     <input type="file" name="voucher_file" class="form-control" />
-                                    <small class="text-danger">Accepted Format: jpg or png, Max Size: 1 MB</small>
+                                    <small class="text-danger">Accepted Format: pdf,jpg or png, Max Size: 1 MB</small>
                                     @error("voucher_file")
                                         <div class="alert alert-danger">{{$message}}</div>
                                     @enderror 
@@ -156,9 +156,11 @@ body {
                                 <div class="entry"> 
                                     <span>Education Qualification Ceritifcate 
                                         <sup class="text-danger">*</sup>
+                                        <br />
+                                        <small class="text-info">PDF should contain all your education qualification certificates</small>
                                     </span> 
                                     <input type="file" name="education_file" class="form-control"  />
-                                    <small class="text-danger">Accepted Format: PDF, Max Size: 2 MB</small>
+                                    <small class="text-danger">Accepted Format: PDF,jpg or png Max Size: 2 MB</small>
                                     @error("education_file")
                                         <div class="alert alert-danger">{{$message}}</div>
                                     @enderror 
@@ -166,9 +168,12 @@ body {
                             </div>
                             <div class="col-md-6">
                                 <div class="entry">
-                                    <span>Experience Certificate / Letter</span> 
+                                    <span>Experience Certificate / Letter
+                                        <br />
+                                    <small class="text-info">PDF should contain all your experience certificates</small>
+                                    </span> 
                                     <input type="file" name="experience_letter" class="form-control"  />
-                                    <small class="text-danger">Accepted Format: PDF, Max Size: 2 MB</small>
+                                    <small class="text-danger">Accepted Format: PDF,jpg or png Max Size: 2 MB</small>
                                     @error("experience_letter")
                                         <div class="alert alert-danger">{{$message}}</div>
                                     @enderror 
@@ -194,7 +199,7 @@ body {
                                 <div class="entry">
                                     <span>Citizenship Back</span> 
                                     <input type="file" name="citizenship_back_file" class="form-control"  />
-                                    <small class="text-danger">Accepted Format: jpg or png, Max Size: 1 MB</small>
+                                    <small class="text-danger">Accepted Format: pdf, jpg or png, Max Size: 1 MB</small>
                                     @error("citizenship_back_file")
                                         <div class="alert alert-danger">{{$message}}</div>
                                     @enderror 
