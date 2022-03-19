@@ -22,7 +22,7 @@
     <!-- End Header styles-->
     
     <!--Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
         
     <body></body>
     <!-- Start Loader -->
