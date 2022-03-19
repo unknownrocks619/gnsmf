@@ -25,7 +25,7 @@ Route::get('/', function () {
 })->name("index");
 Route::get("/upload", function () {
     return view("online-application.upload");
-})->name("get","list");
+})->name("upload_application");
 Route::get("/upload/file/{user}",[VacancyCandidateController::class,"create"])->name('vacancy_upload');
 Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacancy_personal_detail');
 Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
