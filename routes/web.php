@@ -31,7 +31,7 @@ Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacanc
 Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
 Route::get("upload/complete/{user}",[VacancyCandidateController::class,"complete"])->name("vacancy_complete");
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashbo ard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get("/personal", function() {
