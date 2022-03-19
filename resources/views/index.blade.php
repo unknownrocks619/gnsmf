@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("layouts.gapp")
 
 @section("content")
 <!-- Start Welcome -->
@@ -11,8 +11,8 @@
             We are <span class="highlight f-bold">coming</span> here soon
           </h1>
           <div class='mg-t'>
-            <a href="{{ asset('images/vacancy.png') }}" target="_blank">
-              <img src="{{ asset('images/vacancy.png') }}" class="img-fluid" style="height: 150px;width:150px;" />
+            <a href="{{ asset('images/vacancy.jpg') }}" target="_blank">
+              <img src="{{ asset('images/vacancy.jpg') }}" class="img-fluid" style="height: 150px;width:150px;" />
             </a>
             <br /><br />
             <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' href='{{ route('index',['download'=>true]) }}'>

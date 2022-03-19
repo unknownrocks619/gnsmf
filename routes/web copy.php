@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
-
 use App\Http\Controllers\VacancyCandidateController;
 
 /*
@@ -28,14 +27,16 @@ Route::get('/', function () {
 Route::get("/upload", function () {
     return view("online-application.upload");
 })->name("upload_application");
-
 Route::get("/upload/file/{user}",[VacancyCandidateController::class,"create"])->name('vacancy_upload');
 Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacancy_personal_detail');
 Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
 Route::get("upload/complete/{user}",[VacancyCandidateController::class,"complete"])->name("vacancy_complete");
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get("/personal", function() {
+    return view("online-application.personal");
+})->name("personal_info");
+
+
