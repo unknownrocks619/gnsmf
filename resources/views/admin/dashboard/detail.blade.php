@@ -89,7 +89,7 @@
                                     <div class="card-title">
                                         <h4 class="card-header">{{ $title[0] . " ". $title[1] }}</h4>
                                     </div>
-                                    <img src="{{ Storage::url($file->path)}}" alt="" class="img-fluid">
+                                    <img src="{{ asset ($file->path)}}" alt="" class="img-fluid">
                                 </div>
 
                             </div>
@@ -127,7 +127,7 @@
                             @endphp
                         </td>
                         <td>
-                            <a href="{{ Storage::url($get_file_detail->path) }}" target="_blank">View / Download</a>
+                            <a href="{{ asset ($get_file_detail->path) }}" target="_blank">View / Download</a>
                         </td>
                     </tr>
                 @empty
