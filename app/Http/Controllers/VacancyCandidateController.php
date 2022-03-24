@@ -115,7 +115,7 @@ class VacancyCandidateController extends Controller
             "application_form_file" => "required|mimes:pdf,png,jpg|file|max:1024",
             "voucher_file" => "required|mimes:pdf,jpg,png|file|max: 1024",
             "education_file" => "required|mimes:pdf,png,jpg|file|max:2048",
-            "experience_letter" => "required|mimes:pdf|file|max:2048",
+            "experience_letter" => "required|mimes:pdf,png,jpg|file|max:2048",
             "citizenship_front_file" => "required|mimes:pdf,png,jpg|file|max:1024",
             "citizenship_back_file" => "required|mimes:pdf,png,jpg|file|max:1024"
         ]);

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminDashboardController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
@@ -34,8 +35,6 @@ Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacanc
 Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
 Route::get("upload/complete/{user}",[VacancyCandidateController::class,"complete"])->name("vacancy_complete");
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
+Route::get('/dashboard', [AdminDashboardController::class,"index"])->middleware(['auth'])->name('dashboard');
+Route::get('/candidate/detail/{candidate}',[AdminDashboardController::class,"candidate_detail"])->name("admin_candidate_detail");
 require __DIR__.'/auth.php';
