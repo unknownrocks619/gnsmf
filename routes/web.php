@@ -18,22 +18,22 @@ use App\Http\Controllers\VacancyCandidateController;
 */
 
 Route::get('/', function () {
-    if (request()->download && request()->download == true) {
+    // if (request()->download && request()->download == true) {
         // dd(Storage::get("public/application-form.pdf"));
         // dd(request()->all());
-        return Storage::download('public/application-form.pdf','gnsmf-application-form.pdf');
-    } 
+        // return Storage::download('public/application-form.pdf','gnsmf-application-form.pdf');
+    // } 
     return view('index');
 })->name("index");
 
-Route::get("/upload", function () {
-    return view("online-application.upload");
-})->name("upload_application");
+// Route::get("/upload", function () {
+//     return view("online-application.upload");
+// })->name("upload_application");
 
-Route::get("/upload/file/{user}",[VacancyCandidateController::class,"create"])->name('vacancy_upload');
-Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacancy_personal_detail');
-Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
-Route::get("upload/complete/{user}",[VacancyCandidateController::class,"complete"])->name("vacancy_complete");
+// Route::get("/upload/file/{user}",[VacancyCandidateController::class,"create"])->name('vacancy_upload');
+// Route::post("/upload",[VacancyCandidateController::class,"store"])->name('vacancy_personal_detail');
+// Route::post("/upload/file/{user}",[VacancyCandidateController::class,"upload_store"])->name('vacancy_upload_file_store');
+// Route::get("upload/complete/{user}",[VacancyCandidateController::class,"complete"])->name("vacancy_complete");
 
 Route::get('/dashboard', [AdminDashboardController::class,"index"])->middleware(['auth'])->name('dashboard');
 Route::get('/candidate/detail/{candidate}',[AdminDashboardController::class,"candidate_detail"])->name("admin_candidate_detail");

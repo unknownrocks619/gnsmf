@@ -10,19 +10,19 @@
           <h1 class='section-title'>
             We are <span class="highlight f-bold">coming</span> here soon
           </h1>
-          <div class='mg-t'>
-            <a href="{{ asset('images/vacancy.jpg') }}" target="_blank">
+          <!-- <div class='mg-t'> -->
+            <!-- <a href="{{ asset('images/vacancy.jpg') }}" target="_blank">
               <img src="{{ asset('images/vacancy.jpg') }}" class="img-fluid" style="height: 150px;width:150px;" />
             </a>
-            <br /><br />
-            <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' href='{{ route('index',['download'=>true]) }}'>
-              Vacancy: Download Application Form
-            </a>
-            <a class='btn btn-outline btn-lg js-to-slide animated onstart' href="{{ route('upload_application') }}">
-                Vacancy: Upload Application
+            <br /><br /> -->
+            <!-- <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' href='{{ route('index',['download'=>true]) }}'> -->
+              <!-- Vacancy: Download Application Form -->
+            <!-- </a> -->
+            <!-- <a class='btn btn-outline btn-lg js-to-slide animated onstart' href="{{ route('upload_application') }}"> -->
+                <!-- Vacancy: Upload Application -->
                 <!-- <i class='fa fa-angle-down'></i> -->
-            </a>
-          </div>
+            <!-- </a> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>

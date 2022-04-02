@@ -140,7 +140,7 @@ class VacancyCandidateController extends Controller
             "vacancy_candidate_id" => $user->id,
             "created_at" => \Carbon\Carbon::now(),
             "updated_at" => \Carbon\Carbon::now(),
-            // "remarks" => $request->voucher_number
+            "remarks" => $request->voucher_number
         ];
         // upload voucher.
         $voucher_file_detail = [
